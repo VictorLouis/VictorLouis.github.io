@@ -2,16 +2,16 @@
 # Theme Customization #
 #######################
 
-title: J. Bravo          # appears in the header and the HTML <title> tag
-author: Johnny Bravo     # appears in an HTML <meta> tag, as well as feed.xml
+title: Victor L.        # appears in the header and the HTML <title> tag
+author: Victor Luis     # appears in an HTML <meta> tag, as well as feed.xml
 description: >           # appears in an HTML <meta> tag, as well as feed.xml
   Hello 911 emergency, there's a handsome guy in my house!
   Oh wait a second, cancel that. It's only me.
 slogan: Showtime!        # appears in the header, alongside the title
-avatar: /i/avatar.png    # appears as portrait in the header
+avatar: /i/vl.png    # appears as portrait in the header
 banner: /i/mountains.svg # appears as background in the header
 url: http://jekyllrb.com # used by plugins to generate feed.xml and sitemap.xml
-baseurl: /jekyll-solana  # prepended to all absolute filepaths
+baseurl: ''              # prepended to all absolute filepaths
 repo: https://github.com//rlue.github.io # appears in footer
 
 # Objects listed here will appear in the main nav menu.
@@ -45,11 +45,11 @@ projects:
     url: https://play.google.com/store/apps/details?id=com.microsoft.cortana
     role: Core Team
     category: NLP
-  - title: Rihanna
-    teaser: Possibly another robot. Also available on Google Play.
-    url: https://play.google.com/store/music/artist/Rihanna?id=Arcw2m2ih45qntv3fufub25tyhu
-    role: Contributor
-    category: Algorithmic Composition
+  - title: Enterprise Messenger
+    teaser: Software Architecture Project.
+    url: https://github.com/VictorLouis/Arq-Messenger
+    role: Creator
+    category: Software Architecture
 
 #################
 # Site Settings #
