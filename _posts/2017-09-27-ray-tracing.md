@@ -20,12 +20,15 @@ BSP divide el nivel en un árbol binario: cada ubicación del árbol es un nodo 
 En las hojas del árbol son polígonos convexos, donde no es útil dividir el nivel más arriba. Estos polígonos convexos se denominan subsectores (o SSECTORS), y están unidos a un sector particular. Cada subsector tiene una lista de segs asociados con ella.
 El sistema BSP es realmente una manera muy inteligente de clasificar los subsectores en el orden correcto para la representación. El algoritmo es bastante simple:
 
+
 > 1. Comienza en el nodo raíz.
 >
 > 2. Dibuja recursivamente los nodos secundarios de este nodo. Se dibuja primero el nodo secundario más cercano a la cámara. (Esto se puede encontrar mirando a qué lado de la línea divisoria
 >  de un nodo dado está encendida la cámara).
 >   
 > 3. Cuando se alcanza un subsector, dibujalo.
+
+## Implementación en C++
 
 ```c++
 
@@ -34,15 +37,15 @@ void traverse_tree(bsp_tree* tree, point eye) {
         return;
 
     int location = tree->find_location(eye);
-    if (location > 0) { // caso de que el ojo este antes de la ubicacion
+    if (location > 0) { // caso de que el ojo este antes de la ubicación
         traverse_tree(tree->back, eye);
         display(tree->polygon_list);
         traverse_tree(tree->front, eye);
-    } else if (location < 0) { // caso el ojo esta detras de la ubicacion
+    } else if (location < 0) { // caso el ojo esta detrás de la ubicación
         traverse_tree(tree->front, eye);
         display(tree->polygon_list);
         traverse_tree(tree->back, eye);
-    } else { // eye が分割超平面上にある場合
+    } else { // Cuando el ojo está en el hiperplano de la división
         traverse_tree(tree->front, eye);
         traverse_tree(tree->back, eye);
     }
