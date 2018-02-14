@@ -7,7 +7,7 @@ author: Victor Luis     # appears in an HTML <meta> tag, as well as feed.xml
 description: >           # appears in an HTML <meta> tag, as well as feed.xml
   かっこいい宿題を作って見せます!
 slogan: Homeworks!        # appears in the header, alongside the title
-avatar: /i/vl.png    # appears as portrait in the header
+avatar: /i/Viktor.png    # appears as portrait in the header
 banner: /i/mountains.svg # appears as background in the header
 url: http://jekyllrb.com # used by plugins to generate feed.xml and sitemap.xml
 baseurl: ''              # prepended to all absolute filepaths
