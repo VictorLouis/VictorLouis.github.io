@@ -34,6 +34,11 @@ nav_menu:
 
 # Objects listed here will appear on the /projects.html page.
 projects:
+  - title: Juguemos Triqui
+    teaser: Reto 3 de moviles.
+    url: https://github.com/VictorLouis/MobileAppsDevClass/tree/master/Tr3sEnLinea
+    role: Creator
+    category: Mobile App
   - title: Enterprise Messenger
     teaser: Software Architecture Project.
     url: https://github.com/VictorLouis/Arq-Messenger
